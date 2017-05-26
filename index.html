@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+		<div class="container">
+	  <div class="row">
+	    <div class="col s12 center-align card indigo accent-2 main">
+				<h1>Pomodoro Clock</h1>
+				<h3>Free Code Camp</h3>
+	      <br />
+	      <div id="buttons">
+	            <div class="btn-large waves-effect waves-light" id="start">Start</div>
+	            <div class="btn-large waves-effect waves-light" id="pause">Pause</div>
+	            <div class="btn-large waves-effect waves-light" id="reset">Reset</div>
+	      </div>
+	      <div class="col s6">
+	        <div class='card indigo accent-1'>
+	          <form>
+	            <p class="range-field">
+	              <label for="setTimeRange"><h4>Set Work Time:</h4></label>
+	              <input type="number" value="25" id="setTimeRange" min="0" max="180" />
+	            </p>
+	          </form>
+	        </div>
+	        <div id="workTimer">--:--:--</div>
+	      </div>
+	      <div class='col s6'>
+	        <div class='card indigo accent-1'>
+	           <form>
+	             <p class="range-field">
+	               <label for="setBreakTimeRange"><h4>Set Break Time:</h4></label>
+	               <input type="number" value="5" id="setBreakTimeRange" min="0" max="90" />
+	             </p>
+	          </form>
+	        </div>
+	        <div id="breakTimer">--:--:--</div>
+	      </div>
+	      <div id="timer"></div>
+	    </div>
+	  </div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="alerts.js"></script>
+	<script src="timer.js"></script>
+	<script src="index.js"></script>
+  </body>
+</html>
